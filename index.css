@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.main--box {
+    position: relative;
+    background: url(images/1.png) right/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.main--box .side-bar {
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -281px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+
+}
+
+.side-bar .logo {
+
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+
+
+}
+
+.side-bar .logo a {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    left: 50px;
+    text-decoration: none;
+    line-height: 60px;
+
+}
+
+.side-bar .menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+
+}
+
+.side-bar .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+    padding-right: 8px;
+
+}
+
+.side-bar .menu li:hover {
+
+    border-left: 2px solid #fff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.side-bar .menu i {
+
+    padding-right: 8px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.side-bar .menu a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.side-bar .socail-media-icons {
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.socail-media-icons i {
+    padding: 0px 10px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 20px;
+    transition: all 0.4s linear;
+}
+
+.socail-media-icons i:hover {
+    opacity: 10;
+}
+
+#check {
+    display: none;
+
+}
+
+.main--box .btn-one {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.side-bar .btn-two i {
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 240px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 2;
+    transition: all 0.4s linear;
+
+
+}
+
+.btn-onr i :hover {
+    font-size: 29px;
+
+}
+
+.btn-two i :hover {
+    font-size: 24px;
+
+}
+
+#check:checked~.side-bar{
+    left: 0px;
+}
+#check:checked~ .btn-one i{
+opacity: 0px;}
